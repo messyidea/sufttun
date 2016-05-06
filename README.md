@@ -17,25 +17,25 @@ usage
 server:
 go get github.com/messyidea/sufttun/server
 
-server -l "addr:port" -t "addr:port" -b 10 -key "your key" -tuncrypt true
+server -l "addr:port" -t "addr:port" -b 10 --key "your key" --tuncrypt true
 
 -l: local addr
 -t: target addr
 -b: max bandwidth of sending in mbps
--key: your key
--tuncrypt: encrypt
+--key: your key
+--tuncrypt: encrypt
 
 
 client:
 go get github.com/messyidea/sufttun/client
 
-client -l "addr:port" -r "addr:port" -b 10 -key "your key" -tuncrypt true
+client -l "addr:port" -r "addr:port" -b 10 --key "your key" --tuncrypt true
 
 -l: local addr
 -r: remote addr
 -b: max bandwidth of sending in mbps
--key: your key
--tuncrypt: encrypt
+--key: your key
+--tuncrypt: encrypt
 
 ```
 
@@ -43,8 +43,8 @@ client -l "addr:port" -r "addr:port" -b 10 -key "your key" -tuncrypt true
 sample
 ---
 ```
-server -l ":porta" -t "127.0.0.1:portb" -b 10 -key "yourkey" -tuncrypt true
-client -l ":portc" -r "server:portd" -b 10 -key "yourkey" -tuncrypt true
+server -l ":porta" -t "127.0.0.1:portb" -b 10 --key "yourkey" --tuncrypt true
+client -l ":portc" -r "server:portd" -b 10 --key "yourkey" --tuncrypt true
 ```
 
 license
