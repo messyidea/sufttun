@@ -1,4 +1,4 @@
-sufttun
+[DEPRECATED] sufttun
 ===
 
 extremely fast & secure udp tunnel based on suft
